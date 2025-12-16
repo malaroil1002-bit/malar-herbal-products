@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK Malar Herbal Products</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:
+        linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),
+        url("natural-bg.jpg") no-repeat center center fixed;
+      background-size:cover;
+      color:#1f2937;
+    }
+
+    a{text-decoration:none}
+
+    .container{max-width:1100px;margin:auto;padding:20px}
+
+    header{
+      background:linear-gradient(135deg,#0f766e,#22c55e);
+      color:#fff;
+      border-radius:0 0 25px 25px;
+    }
+
+    header .container{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      color:#fff;
+      margin-left:15px;
+      font-weight:500;
+    }
+
+    .hero{
+      text-align:center;
+      padding:60px 20px;
+    }
+
+    .hero h1{font-size:40px;margin-bottom:10px}
+
+    .badge{
+      display:inline-block;
+      background:rgba(255,255,255,0.2);
+      padding:6px 14px;
+      border-radius:20px;
+      margin:5px;
+      font-size:14px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 22px;
+      border-radius:10px;
+      font-weight:600;
+      margin:8px;
+    }
+
+    .btn-primary{background:#fff;color:#0f766e}
+    .btn-secondary{border:2px solid #fff;color:#fff}
+
+    section{padding:60px 0}
+
+    .section-title{text-align:center;margin-bottom:30px}
+    .section-title h2{font-size:32px}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;
+    }
+
+    .card{
+      background:#fff;
+      padding:18px;
+      border-radius:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .price{font-weight:700;margin-top:8px}
+
+    .order a{
+      display:inline-block;
+      background:#22c55e;
+      color:#fff;
+      padding:10px 16px;
+      border-radius:10px;
+      margin-top:10px;
+      font-weight:600;
+    }
+
+    footer{
+      background:#0f172a;
+      color:#cbd5f5;
+      padding:30px 0;
+    }
+
+    footer a{color:#cbd5f5}
+
+    .copyright{
+      background:#020617;
+      text-align:center;
+      padding:12px;
+      color:#94a3b8;
+      font-size:14px;
+    }
+
+    img{max-width:100%}
+
+    @media(max-width:600px){
+      .hero h1{font-size:28px}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <img src="logo.png" alt="Malar Herbal Products" style="height:55px">
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>100% Natural Hair & Skin Care</h1>
+    <p>Pure herbal products made with traditional care</p>
+
+    <div>
+      <span class="badge">No Chemicals</span>
+      <span class="badge">No Parabens</span>
+      <span class="badge">100% Natural</span>
+    </div>
+
+    <a href="#products" class="btn btn-primary">View Products</a>
+    <a href="https://wa.me/919384150379" class="btn btn-secondary">Order on WhatsApp</a>
+  </div>
+</header>
+
+<section id="products">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Products</h2>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Herbal Hair Oil</h3>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0">
+          <img src="hairoil1.jpg">
+          <img src="hairoil2.jpg">
+          <img src="hairoil3.jpg">
+        </div>
+        <p class="price">
+          100 ml – ₹200<br>
+          200 ml – ₹400<br>
+          500 ml – ₹999
+        </p>
+        <div class="order">
+          <a href="https://wa.me/919384150379">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Face Pack Powder</h3>
+        <img src="facepack.jpg" style="margin:10px 0;border-radius:10px">
+        <p class="price">50 g – ₹100<br>100 g – ₹200</p>
+        <div class="order">
+          <a href="https://wa.me/919384150379">Order on WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact & Orders</h2>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <p><strong>WhatsApp:</strong> 9384150379</p>
+        <p><strong>GPay:</strong> 9585824352</p>
+        <a href="https://wa.me/919384150379" class="btn btn-primary">Chat on WhatsApp</a>
+      </div>
+
+      <div class="card">
+        <p>
+          Instagram:
+          <a href="https://www.instagram.com/mk_malarherbal_product" target="_blank">
+            @mk_malarherbal_product
+          </a>
+        </p>
+
+        <p>
+          YouTube:
+          <a href="https://youtu.be/Z-h6L9L2s9k?si=0GWSj2Nbt7Zjgqjo" target="_blank">
+            Visit Channel
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <h3>🌿 Malar Herbal Products</h3>
+    <p>Pure Nature. Honest Care.</p>
+  </div>
+</footer>
+
+<div class="copyright">
+  © 2025 Malar Herbal Products. All rights reserved.
+</div>
+
+</body>
+</html>
